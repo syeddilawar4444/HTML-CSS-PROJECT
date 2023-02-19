@@ -1,0 +1,302 @@
+/* Font Import */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400&family=Roboto:ital,wght@0,100;0,300;0,400;1,100;1,300&display=swap');
+/*  */
+
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    line-height: 1.4;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+
+
+
+.container {
+    max-width: 1200px;
+
+    margin: 0 auto;
+}
+
+button {
+    padding: 10px 15px;
+    border: none;
+    transition: 0.2s ease-in-out;
+}
+
+button:hover {
+    opacity: 0.8;
+    transition: 0.2s ease-in-out;
+}
+
+
+img,i,button, .tag_btn,.feature,input,li:hover{
+    cursor: pointer;
+}
+
+
+
+/*  start navbar */
+
+nav {
+
+    box-shadow: 5px 5px 5px rgb(1 1 1 / 5%);
+    position: sticky;
+    top: 0;
+    background: white;
+    padding: 10px;
+    z-index: 50;
+}
+
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav .bar-icon i {
+    font-size: 2.4em;
+}
+
+/* end navbar */
+/* PROJECT BY SYED DILAWAR HUSSAIN */
+/* hero-section */
+
+.hero_contant {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
+}
+
+.hero_contant h1 {
+    font-size: 7.2rem;
+    font-weight: 400;
+}
+
+.hero_contant p {
+    font-size: 1.8rem;
+    font-weight: 300;
+    color: #000000;
+
+}
+
+.tag_btn {
+    padding: 5px 10px;
+    font-size: 1.5rem;
+    align-self: flex-start;
+    color: white;
+    background-color: #149F39;
+}
+
+.explore_btn {
+    align-self: flex-start;
+    font-size: 2rem;
+    color: white;
+    border: none;
+    background: #FFC066;
+}
+
+.hero {
+    margin-top: 20px;
+}
+
+.hero_section {
+    gap: 50px;
+    display: flex;
+    align-items: center;
+}
+
+
+/* end Hero section */
+
+/* start feature card */
+.features {
+    max-width: 90%;
+    margin: 0px auto;
+    display: flex;
+    justify-content: center;
+   
+    gap: 20px;
+    margin-top: 50px;
+
+}
+.feature {
+    gap: 15px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    transition: 0.2s ease-in-out;
+}
+
+
+.feature:hover {
+    transition: 0.2s ease-in-out;
+    box-shadow: 5px 5px 5px rgba(1, 1, 1, 0.05);
+}
+
+.feature img {
+    width: 72px;
+    height: 72px;
+}
+.feature_content {
+    font-size: 1.4rem;
+}
+hr{
+max-width: 100%;
+margin-top: 30px;
+}
+/* end feature card */
+/* menu section start */
+.menu_section{
+   
+    margin: 30px 0px;
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    align-items: center;
+}
+.menu_section .tag_btn{
+    align-self: center;
+}
+.menu_section h2{
+  font-size: 2.8rem;
+}
+.grid{
+/* border: 4px solid blue; */
+    display: grid;
+    gap: 10px;
+    grid-template-areas:
+      "I1 I1 I2 I3"
+      "I1 I1 I2 I7"
+      "I4 I5 I6 I7";
+}
+.grid img {
+    border-radius: 10px;
+    transition: 0.2s ease-in-out;
+    width: 100%;
+    height: 100%;
+  }
+  .grid img:hover {
+    transform: scale(1.05);
+    transition: 0.2s ease-in-out;
+  }
+  .img1 {
+    grid-area: I1;
+  }
+  .img2 {
+    grid-area: I2;
+  }
+  .img3 {
+    grid-area: I3;
+  }
+  .img4 {
+    grid-area: I4;
+  }
+  .img5 {
+    grid-area: I5;
+  }
+  .img6 {
+    grid-area: I6;
+  }
+  .img7 {
+    grid-area: I7;
+  }
+
+/* menu section end */
+/* footer section start */
+.footer{
+    /* gap: 80p */
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+
+}
+.footer h3{
+    color: gray;
+margin-bottom: 10px;
+font-size: 2rem;
+}
+.footer ul{
+    list-style: none;
+}
+.footer ul li{
+font-size: 1.6rem;
+margin-bottom: 5px;
+}
+footer{
+    background-color: #fff0db;
+   
+    /* margin-top: 30px; */
+}
+.join input{
+margin-bottom: 10px;
+padding: 5px 10px;
+}
+.join .icons {
+    gap: 10px;
+    display: flex;
+font-size: 3.4rem;
+}
+    
+/* footer section end */
+
+
+
+
+/* Responsive Media Querry start */
+
+@media (min-width:769px) and (max-width: 1024px){
+    .hero_contant h1 {
+        font-size: 4.2rem;
+    } 
+   
+
+}
+
+@media (max-width: 768px) {
+    .hero_section {
+        flex-direction: column;
+    }
+
+    .hero_img img {
+        width: 80%;
+    }
+
+    .hero_img {
+        display: flex;
+        justify-content: center;
+    }
+
+    .hero_contant h1 {
+        font-size: 3.2rem;
+    } 
+    /* hero section end */
+    /* feature card */
+    .features {
+        flex-direction: column;
+        max-width: 100%;
+        display: block;
+
+    }
+
+    .feature {
+        display: block;
+
+
+    }
+    .footer{
+        flex-direction: column;
+    }
+    
+}
